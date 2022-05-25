@@ -4,6 +4,7 @@ require('dotenv').config();
 const HDWalletProvider = require('truffle-hdwallet-provider');
 
 module.exports = {
+
   networks: {
     development: {
       host: 'localhost',
@@ -16,7 +17,7 @@ module.exports = {
       network_id: '*', // eslint-disable-line camelcase
     },
     ropsten: {
-      provider: function() {
+      provider: function () {
         return new HDWalletProvider(
           process.env.MNEMONIC,
           `https://ropsten.infura.io/${process.env.INFURA_API_KEY}`
@@ -32,5 +33,7 @@ module.exports = {
       enabled: true,
       runs: 200
     }
-  }
+  },
+
+
 };

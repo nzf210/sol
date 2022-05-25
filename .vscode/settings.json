@@ -1,0 +1,4 @@
+{
+    "solidity.defaultCompiler": "localNodeModule",
+    "solidity.compileUsingLocalVersion": "d:\\004 Atom Data\\Solidity\\ico_irl\\soljson-v0.4.24+commit.e67f0147.js"
+}
